@@ -33,7 +33,7 @@ div#rblock {
 			alt="Bank Account" />
 	</div>
 	<div id="rblock">
-		<form class="loginForm" action="LoginController"  method="post">
+		<form class="loginForm" action="LoginController" method="post">
 			<!-- User login info -->
 			<table id="loginTable">
 				<tr>
