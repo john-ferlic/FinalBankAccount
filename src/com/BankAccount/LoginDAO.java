@@ -11,7 +11,7 @@ public class LoginDAO {
 	private java.sql.Connection createConnection() throws SQLException {
 		Driver driver = new oracle.jdbc.driver.OracleDriver();
 		DriverManager.deregisterDriver(driver);
-		return DriverManager.getConnection("jdbc:oracle:thin:@LTUS48820:1521:xe", "hr", "hr");
+		return DriverManager.getConnection("jdbc:oracle:thin:@LTUS000491:1521:xe", "system", "admin");
 
 	}
 
