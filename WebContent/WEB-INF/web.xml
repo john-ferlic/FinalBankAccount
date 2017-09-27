@@ -19,4 +19,14 @@
     <servlet-name>LoginController</servlet-name>
     <url-pattern>/LoginController</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ApplicantController</display-name>
+    <servlet-name>ApplicantController</servlet-name>
+    <servlet-class>com.BankAccount.ApplicantController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ApplicantController</servlet-name>
+    <url-pattern>/ApplicantController</url-pattern>
+  </servlet-mapping>
 </web-app>
