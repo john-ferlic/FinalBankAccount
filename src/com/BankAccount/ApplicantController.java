@@ -29,7 +29,7 @@ public class ApplicantController extends HttpServlet {
 
 		ApplicantDAO applicantDao = new ApplicantDAO();
 		applicantDao.insertApplicant(appl);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("incomeInfo.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("IncomeInfo.jsp");
 		dispatcher.forward(request, response);
 	}
 }

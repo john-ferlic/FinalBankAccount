@@ -39,7 +39,7 @@
 		</div>
 		<div id="rblock"> 
 			<h1>Applicant Info</h1>
-			<form class="applicantForm" method="post" action=""><!--INSERT CODE FOR ACTION-->
+			<form class="applicantForm" method="post" action="ApplicantController"><!--INSERT CODE FOR ACTION-->
 				<!-- User box -->
 				<table id="applicantTable">
 					<tr>
@@ -48,7 +48,7 @@
 					</tr>
 					<tr>
 						<td>Middle Name</td>
-						<td><input type="text" name="mname" required></td>
+						<td><input type="text" name="mname"></td>
 					</tr>
 					<tr>
 						<td>Last Name</td>
@@ -60,7 +60,7 @@
 					</tr>
 					<tr>
 						<td>Address Line 2</td>
-						<td><input type="text" name="address2" required></td>
+						<td><input type="text" name="address2"></td>
 					</tr>
 					<tr>
 						<td>City</td>
