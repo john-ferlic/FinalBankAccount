@@ -39,7 +39,7 @@
 		</div>
 		<div id="rblock">
 			<h1>Eligibility Info</h1>
-			<form class="eligibilityForm">
+			<form class="eligibilityForm" method="post" action="LoanController">
 				<!-- User box -->
 				<table id="eligibilityTable">
 					<tr>
@@ -100,7 +100,7 @@
 					</tr>
 						<td>
 							<input type="button" name="previous" value="previous" onclick="location.href='Income_info.jsps'">
-							<input type="button" name="next" value="next" onclick="location.href='Loan_Info.jsp'">
+							<td align="center"><input type="submit" value="Next"></td>
 						</td>
 					<tr>
 				</table>
