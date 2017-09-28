@@ -6,14 +6,13 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 
 public class ApplicantDAO {
 
 	private java.sql.Connection createConnection() throws SQLException {
 		Driver driver = new oracle.jdbc.driver.OracleDriver();
 		DriverManager.deregisterDriver(driver);
-		return DriverManager.getConnection("jdbc:oracle:thin:@LTUS48954:1521:xe", "system", "admin");
+		return DriverManager.getConnection("jdbc:oracle:thin:@LTUS000491:1521:xe", "system", "admin");
 
 	}
 
@@ -23,7 +22,16 @@ public class ApplicantDAO {
 				+ "VALUES(?,?,?,?,?,?,?,?,?)";
 
 		try {
-			con = createConnection();			
+			con = createConnection();
+			ResultSet rs = con.createStatement().executeQuery("SELECT applnumber FROM applicant");
+			int number = 10000;
+			while(rs.next()) {
+				if(rs.getInt(1)==number) {
+					number++;
+				}
+			}
+			appl.setApplnumber(number);
+			
 			PreparedStatement prepStatement = con.prepareStatement(qryString);
 			prepStatement.setInt(1, appl.getApplnumber());
 			prepStatement.setString(2, appl.getFirstname());
