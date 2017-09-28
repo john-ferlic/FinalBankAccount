@@ -12,7 +12,7 @@ public class ApplicantDAO {
 	private java.sql.Connection createConnection() throws SQLException {
 		Driver driver = new oracle.jdbc.driver.OracleDriver();
 		DriverManager.deregisterDriver(driver);
-		return DriverManager.getConnection("jdbc:oracle:thin:@LTUS000491:1521:xe", "system", "admin");
+		return DriverManager.getConnection("jdbc:oracle:thin:@LTUS48954:1521:xe", "system", "admin");
 
 	}
 

@@ -74,7 +74,7 @@
 						<td><input type="text" name="rent" required></td>
 					</tr>
 					<tr>
-						<td></td>
+						<td><input type="button" name="previous" value="previous" onclick="location.href='applicantInfo.jsp'"></td>
 						<td align="center"><input type="submit" value="Next"></td>
 					</tr>
 				</table>
