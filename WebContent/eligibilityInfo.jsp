@@ -99,13 +99,11 @@
 						</td>
 					</tr>
 						<td>
-<<<<<<< HEAD
 							<input type="button" name="previous" value="previous" onclick="location.href='Income_info.jsps'">
 							<td align="center"><input type="submit" value="Next"></td>
 =======
 							<input type="button" name="previous" value="previous" onclick="location.href='IncomeInfo.jsp'">
 							<input type="button" name="next" value="next" onclick="location.href='Loaninfo.jsp'">
->>>>>>> branch 'master' of https://github.com/john1787/FinalBankAccount.git
 						</td>
 					<tr>
 				</table>
