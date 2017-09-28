@@ -16,6 +16,7 @@ public class EligibilityDAO {
 		return DriverManager.getConnection("jdbc:oracle:thin:@LTUS50578:1521:xe", "system", "admin");
 
 	}
+	
 	//Write SQL INSERT statement
 	public void insertEligibility(Eligibility elig) {
 		Connection con = null;

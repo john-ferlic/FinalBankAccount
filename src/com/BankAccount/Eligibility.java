@@ -2,12 +2,12 @@ package com.BankAccount;
 
 
 public class Eligibility {
-	private String accountType;
-	private int initialDeposit;
-	private String directDeposit; //Yes or No
-	private String card;
-	private int loanAmount;
-	private String creditScore;
+	private String accountType; //Text input (Numeric innputs only)
+	private int initialDeposit; //Text input (Numeric innputs only)
+	private String directDeposit; //Yes or No radio
+	private String card;	//Dropdown box
+	private int loanAmount; //Text input (Numeric innputs only)
+	private String creditScore; //Dropdown box
 	
 	//CREATE GETTERS AND SETTER METHODS FOR EACH VARIABLE
 	//Account Type

@@ -29,7 +29,7 @@ public class EligibilityController extends HttpServlet {
 		//Call Eligibility DAO and dispatch information to next page in sequence (LoanInfo.jsp)
 		EligibilityDAO eligibilityDao = new EligibilityDAO();
 		eligibilityDao.insertEligibility(elig);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("LoanInfo.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("Loaninfo.jsp");
 		dispatcher.forward(request, response);
 	}
 	
