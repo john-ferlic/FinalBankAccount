@@ -71,7 +71,7 @@
 							</select>
 						</td>
 					</tr>
-					</tr>
+					<tr>
 						<td>Loan Amount Required (in $)</td>
 						<td>
 							<select name="loanAmount" required>
@@ -87,7 +87,17 @@
 						<td>Rent Lease/Amount</td>
 						<td><input type="text" name="rentAmount" required></td>
 					</tr>
+					<tr>
 						<td>Credit Score</td>
+						<td>
+							<select name="creditScore" required>
+								<option value="excellent">Excellent</option>
+								<option value="good">Good</option>
+								<option value="fair">Fair</option>
+								<option value="bad">Bad</option>
+							</select>
+						</td>
+					</tr>
 						<td>
 							<input type="button" name="previous" value="previous" onclick="location.href='Income_info.html'">
 							<input type="button" name="next" value="next" onclick="location.href='Loan_Info.html'">
