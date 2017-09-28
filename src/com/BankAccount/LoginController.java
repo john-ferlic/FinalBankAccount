@@ -43,15 +43,13 @@ public class LoginController extends HttpServlet {
 		RequestDispatcher rd = null;
 
 		if (result) {
-			System.out.println("is working: successful");
 			rd = request.getRequestDispatcher("applicantInfo.jsp");
-			request.setAttribute("country", "USA");
 			rd.forward(request, response);
 
 		} else {
-			System.out.println("is working: failure");
-			rd = request.getRequestDispatcher("bankingLogin.jsp");
-			rd.forward(request, response);
+			request.setAttribute("error","Invalid Username or Password");
+			rd=request.getRequestDispatcher("Login.jsp");            
+			rd.include(request, response);
 		}
 	}
 

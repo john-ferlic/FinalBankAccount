@@ -12,7 +12,6 @@ public class LoginDAO {
 		Driver driver = new oracle.jdbc.driver.OracleDriver();
 		DriverManager.deregisterDriver(driver);
 		return DriverManager.getConnection("jdbc:oracle:thin:@LTUS000491:1521:xe", "system", "admin");
-
 	}
 
 	public boolean isUser(Login login) throws Exception {
