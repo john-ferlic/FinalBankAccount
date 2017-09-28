@@ -23,10 +23,10 @@ public class ApplicantDAO {
 
 		try {
 			con = createConnection();
-			ResultSet res = con.createStatement().executeQuery("SELECT applnumber FROM applicant");
+			ResultSet rs = con.createStatement().executeQuery("SELECT applnumber FROM applicant");
 			int number = 10000;
-			while(res.next()) {
-				if(res.getInt(1)==number) {
+			while(rs.next()) {
+				if(rs.getInt(1)==number) {
 					number++;
 				}
 			}

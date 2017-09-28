@@ -17,7 +17,6 @@ public class ApplicantController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		Applicant appl = new Applicant();
-		//appl.setApplnumber(12345);
 		appl.setFirstname(request.getParameter("fname"));
 		appl.setMidname(request.getParameter("mname"));
 		appl.setLastname(request.getParameter("lname"));
