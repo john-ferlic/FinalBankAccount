@@ -37,7 +37,7 @@
 		</div>
 		<div id="rblock">
 			<h1>Income Info</h1>
-			<form class="incomeForm">
+			<form class="incomeForm" method="post" action="IncomeController">
 				<!-- User box -->
 				<table id="incomeTable">
 					<tr>
@@ -58,7 +58,7 @@
 					</tr>
 					<tr>
 						<td>Annual Income</td>
-						<td><input type="text" name="annualIncome" required></td>
+						<td><input type="text" name="annual" required></td>
 					</tr>
 					<tr>
 						<td>House Rent/Own</td>
@@ -71,13 +71,12 @@
 					</tr>
 					<tr>
 						<td>Rent Lease/Amount</td>
-						<td><input type="text" name="amount" required></td>
+						<td><input type="text" name="rent" required></td>
 					</tr>
+					<tr>
 						<td></td>
-						<td class="buttons">
-							<input align="center" type="button" name="previous" value="previous" onclick="location.href='Applicant_Info.html'">
-							<input align="center" type="button" name="next" value="next" onclick="location.href='Eligibility_Info.html'">
-						</td>
+						<td align="center"><input type="submit" value="Next"></td>
+					</tr>
 				</table>
 				
 			</form>

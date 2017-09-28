@@ -29,4 +29,14 @@
     <servlet-name>ApplicantController</servlet-name>
     <url-pattern>/ApplicantController</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>IncomeController</display-name>
+    <servlet-name>IncomeController</servlet-name>
+    <servlet-class>com.BankAccount.IncomeController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IncomeController</servlet-name>
+    <url-pattern>/IncomeController</url-pattern>
+  </servlet-mapping>
 </web-app>
