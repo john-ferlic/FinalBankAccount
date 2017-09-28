@@ -44,7 +44,6 @@ public class LoginController extends HttpServlet {
 
 		if (result) {
 			rd = request.getRequestDispatcher("applicantInfo.jsp");
-			request.setAttribute("country", "USA");
 			rd.forward(request, response);
 
 		} else {
