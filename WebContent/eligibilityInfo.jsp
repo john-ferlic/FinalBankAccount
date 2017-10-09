@@ -99,11 +99,8 @@
 						</td>
 					</tr>
 						<td>
-							<input type="button" name="previous" value="previous" onclick="location.href='Income_info.jsps'">
-							<td align="center"><input type="submit" value="Next"></td>
-=======
-							<input type="button" name="previous" value="previous" onclick="location.href='IncomeInfo.jsp'">
-							<input type="button" name="next" value="next" onclick="location.href='Loaninfo.jsp'">
+							<td><input type="button" name="previous" value="previous" onclick="location.href='Income_info.jsps'">
+							<input type="submit" value="Next"></td>
 						</td>
 					<tr>
 				</table>

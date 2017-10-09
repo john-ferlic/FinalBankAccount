@@ -9,7 +9,7 @@ public class Applicant {
 	private String addrline1;
 	private String addrline2;
 	private String city;
-	private String zipcode;
+	private String zipcode; 
 	
 	public int getApplnumber() {
 		return applnumber;
