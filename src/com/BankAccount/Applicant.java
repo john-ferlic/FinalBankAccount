@@ -9,7 +9,7 @@ public class Applicant {
 	private String addrline1;
 	private String addrline2;
 	private String city;
-	private int zipcode;
+	private String zipcode;
 	
 	public int getApplnumber() {
 		return applnumber;
@@ -53,10 +53,10 @@ public class Applicant {
 	public void setCity(String city) {
 		this.city = city;
 	}
-	public int getZipcode() {
+	public String getZipcode() {
 		return zipcode;
 	}
-	public void setZipcode(int zipcode) {
+	public void setZipcode(String zipcode) {
 		this.zipcode = zipcode;
 	}
 	public String getState() {

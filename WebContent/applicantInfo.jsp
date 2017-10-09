@@ -72,7 +72,7 @@
 					</tr>
 					<tr>
 						<td>ZIP Code</td>
-						<td><input type="text" name="zip" pattern="(\d{5}([\-]\d{4})?)"
+						<td><input type="text" name="zip" pattern="(\d{5}([\-]\d{4})?)" title="##### or #####-####"
 						 required></td>
 					</tr>
 					<tr>

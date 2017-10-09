@@ -13,7 +13,6 @@ public class ApplicantDAO {
 		Driver driver = new oracle.jdbc.driver.OracleDriver();
 		DriverManager.deregisterDriver(driver);
 		return DriverManager.getConnection("jdbc:oracle:thin:@LTUS000491:1521:xe", "system", "admin");
-
 	}
 
 	public void insertApplicant(Applicant appl) {
@@ -40,7 +39,7 @@ public class ApplicantDAO {
 			prepStatement.setString(5, appl.getAddrline1());
 			prepStatement.setString(6, appl.getAddrline2());
 			prepStatement.setString(7, appl.getCity());
-			prepStatement.setInt(8, appl.getZipcode());
+			prepStatement.setString(8, appl.getZipcode());
 			prepStatement.setString(9, appl.getState());
 			prepStatement.executeUpdate();
 			prepStatement.close();
