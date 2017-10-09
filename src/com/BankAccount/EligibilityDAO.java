@@ -13,7 +13,7 @@ public class EligibilityDAO {
 		//Connect system to database
 		Driver driver = new oracle.jdbc.driver.OracleDriver();
 		DriverManager.deregisterDriver(driver);
-		return DriverManager.getConnection("jdbc:oracle:thin:@LTUS48820:1521:xe", "system", "admin");
+		return DriverManager.getConnection("jdbc:oracle:thin:@LTUS50578:1521:xe", "system", "admin");
 
 	}
 	
