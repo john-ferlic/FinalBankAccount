@@ -17,6 +17,7 @@ public class EligibilityController extends HttpServlet {
 		
 		//Create new Eligibility class object
 		Eligibility elig = new Eligibility();
+		
 	
 		//Set eligibility values using from user form inputs
 		elig.setAccountType(request.getParameter("accountType"));

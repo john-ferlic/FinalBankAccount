@@ -25,6 +25,11 @@ public class ApplicantController extends HttpServlet {
 		appl.setCity(request.getParameter("city"));
 		appl.setState(request.getParameter("state"));
 		appl.setZipcode(Integer.parseInt(request.getParameter("zip")));
+		
+		
+		int applicantNum = (int) (Math.random() * 1000);
+		request.setAttribute(" ", applicantNum);
+		System.out.println(request.getAttribute("applicantNum"));
 
 		ApplicantDAO applicantDao = new ApplicantDAO();
 		applicantDao.insertApplicant(appl);
