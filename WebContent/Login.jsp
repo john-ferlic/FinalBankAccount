@@ -12,7 +12,7 @@ body {
 	width: 100%;
 	height: 100%;
 	visibility: visible;
-	font-size: 300%;
+	font-size: 170%;
 }
 
 div#rblock {
@@ -42,17 +42,19 @@ div#rblock {
 			%>
 			<table id="loginTable">
 				<tr>
-					<td>User Name</td>
+					<td align="left">Username</td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>					
 					<td><input type="text" name="uname" required></td>
 				</tr>
 				<tr>
-					<td>Password</td>
+					<td align="left">Password</td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 					<td><input type="password" name="password" required></td>
 				</tr>
 				<tr>
 					<td></td>
-					<td button="right"><input id="submit" type="submit"
-						value="Submit" /></td>
+					<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td align="right"><input id="submit" type="submit" value="Submit" /></td>
 				</tr>
 			</table>
 		</form>
